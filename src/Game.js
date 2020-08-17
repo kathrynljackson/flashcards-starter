@@ -19,10 +19,6 @@ class Game {
   }
 }
 
-class Turn {
-  constructor(string, Card) {
 
-  }
-}
 
 module.exports = Game;

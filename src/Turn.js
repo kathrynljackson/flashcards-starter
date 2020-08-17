@@ -4,3 +4,6 @@ class Turn {
     this.cardObject = cardObject;
   }
 }
+
+
+module.exports = Turn;
