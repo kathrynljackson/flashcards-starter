@@ -19,13 +19,15 @@ class Turn {
 
   evaluateGuess() {
     if (this.userGuess === this.cardObject.correctAnswer) {
-      return true
+      return true;
     } else {
-      return false
+      Round.incorrectGuesses.push(this.cardObject.id)
+      return false;
+
     }
   };
 
-  giveFeedback() {
+   giveFeedback() {
     if (this.userGuess === this.cardObject.correctAnswer) {
       return 'correct!'
     } else {
