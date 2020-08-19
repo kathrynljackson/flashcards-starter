@@ -20,17 +20,24 @@ class Round {
     var currentCard = this.returnCurrentCard();
     const newTurn = new Turn(userGuess, currentCard);
     return newTurn.giveFeedback();
+    return newTurn.evaluateGuess();
     for (var i=0; i<this.deck.length; i++) {
       this.deck[i]++;
-      console.log('loop works!')
-    };
-    if (this.userGuess != this.cardObject.correctAnswer) {
-      console.log(this.incorrectGuesses)
-       this.incorrectGuesses.push(this.deck[i].id)
-    }
 
-
+      }
   };
+
+  calculatePercentCorrect(){
+    var totalIncorrect = this.incorrectGuesses.length;
+    var percentIncorrect = totalIncorrect/this.turns;
+    var percentCorrect = (0-percentIncorrect)*100;
+    return percentCorrect;
+  }
+
+  endRound(){
+    console.log(`** Round over! ** You answered ${percentCorrect}% of the questions correctly!`)
+  }
+
 
 
 
