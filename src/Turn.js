@@ -25,7 +25,7 @@ class Turn {
     }
   };
 
-  giveFeedback() {
+   giveFeedback() {
     if (this.userGuess === this.cardObject.correctAnswer) {
       return 'correct!'
     } else {

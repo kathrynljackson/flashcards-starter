@@ -1,6 +1,7 @@
 const data = require('./data');
 const prototypeQuestions = data.prototypeData;
 const util = require('./util');
+const Turn = require('../src/Turn');
 
 class Round {
   constructor(deck) {
@@ -14,11 +15,19 @@ class Round {
     return this.deck[0];
   }
 
-  takeTurn() {
-    const newTurn = Object.create(Turn);
-    this.turns++;
-    console.log(this.turns)
+  takeTurn(userGuess) {
+    this.turns++
+    var currentCard = this.returnCurrentCard()
+    const newTurn = new Turn(userGuess, currentCard);
+
+
+    return newTurn.giveFeedback();
+    for (var i=0; i<this.deck.length; i++) {
+      this.deck[i]++;
+    };
   }
+
+
 
 }
 
