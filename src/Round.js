@@ -14,10 +14,10 @@ class Round {
     return this.deck[0];
   }
 
-  taketurn() {
-    var newTurn = new Turn;
+  takeTurn() {
+    const newTurn = Object.create(Turn);
     this.turns++;
-    
+    console.log(this.turns)
   }
 
 }
