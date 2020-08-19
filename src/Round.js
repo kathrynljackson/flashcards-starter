@@ -16,16 +16,22 @@ class Round {
   }
 
   takeTurn(userGuess) {
-    this.turns++
-    var currentCard = this.returnCurrentCard()
+    this.turns++;
+    var currentCard = this.returnCurrentCard();
     const newTurn = new Turn(userGuess, currentCard);
-
-
     return newTurn.giveFeedback();
     for (var i=0; i<this.deck.length; i++) {
       this.deck[i]++;
+      console.log('loop works!')
     };
-  }
+    if (this.userGuess != this.cardObject.correctAnswer) {
+      console.log(this.incorrectGuesses)
+       this.incorrectGuesses.push(this.deck[i].id)
+    }
+
+
+  };
+
 
 
 
