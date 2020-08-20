@@ -14,9 +14,11 @@ This project requires writing a program that simulates using flash cards. This p
 * Write modular, reusable code that follows SRP (Single Responsibility Principle)
 * Implement a robust testing suite using TDD
 
+
 ## Preview of Working Application
 
 INSERT GIF HERE
+
 
 ## Installation Instructions
 
@@ -44,32 +46,23 @@ You should see something like this in your terminal:
 
 INSERT TERMINAL PICTURE HERE.
 
-**Flashcards** is a game that tests your knowledge of the concepts covered in Turing FE Module 2.
+**Flashcards** is a game that tests your knowledge of the concepts covered in Turing FE Module 2. The game is started by running `node index.js`.
 
-Use the **up and down arrows on your keyboard** to select the answer to each question.
+1. Use the **up and down arrows on your keyboard** to select the answer to each question.
 
-Use the **return key on your keyboard** to choose the correct answer once your choice has been highlighted. 
+2. Use the **return key on your keyboard** to choose the correct answer once your choice has been highlighted. 
 
-After each answer, you will be notified as to whether or not you chose the correct answer.
+3. After each answer, you will be notified as to whether or not you chose the correct answer.
 
 INSERT CORRECT/INCORRECT EXAMPLE HERE
 
-Use the **return key on your keyboard** to move on to the next question.
+4. Use the **return key on your keyboard** to move on to the next question.
 
-At the end of the round, you will be shown your overall score.
+5. At the end of the round, you will be shown your overall score.
 
 INSERT SCORE PICTURE HERE
 
-Unhappy with your score? No worries! Use ***CTRL + C*** to exit the game. Run `node index.js` in your terminal to begin the game again. 
-
-
-
-
-
-
-
-
-
+6. Unhappy with your score? No worries! Use ***CTRL + C*** to exit the game. Run `node index.js` in your terminal to begin the game again. 
 
 
 ## My Github
