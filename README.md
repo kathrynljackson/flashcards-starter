@@ -64,7 +64,7 @@ You should see something like this in your terminal:
 
 ![Screen Shot 2020-08-20 at 3 57 59 PM](https://user-images.githubusercontent.com/65988644/90831527-2c8afc80-e301-11ea-99e0-1711c9a016fc.png)
 
-6. Unhappy with your score? No worries! Use ***CTRL + C*** to exit the game. Run `node index.js` in your terminal to begin the game again. 
+6. Unhappy with your score? No worries! Use **CTRL + C** to exit the game. Run `node index.js` in your terminal to begin the game again. 
 
 
 ## My Github
