@@ -1,5 +1,4 @@
-# FlashCards Starter Kit
-### Mod 2 
+# FlashCards Starter Kit: Turing FE Module 2
 ### Kathryn Jackson
 ### Extension: [Trello Project Board](https://trello.com/b/cf2Jiow3/flash-cards)
 
