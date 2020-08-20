@@ -3,10 +3,16 @@ const prototypeQuestions = data.prototypeData;
 const util = require('./util');
 
 class Game {
-  constructor() {
+  constructor(currentRound) {
+    this.currentRound = currentRound;
 
   }
 
+  start(){
+    var cards = new Cards;
+    var deck = new Deck;
+    var round = new Round(deck);
+  }
 
 
   printMessage(deck, round) {

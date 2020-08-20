@@ -20,6 +20,7 @@ class Round {
   takeTurn(userGuess) {
     var currentCard = this.returnCurrentCard();
     this.turns++;
+    console.log(this.turns)
     const newTurn = new Turn(userGuess, currentCard);
     if (newTurn.evaluateGuess() != true) {
       this.incorrectGuesses.push(currentCard.id)
@@ -30,12 +31,14 @@ class Round {
   calculatePercentCorrect(){
     var totalIncorrect = this.incorrectGuesses.length;
     var percentIncorrect = totalIncorrect/this.turns;
-    var percentCorrect = (0-percentIncorrect)*100;
+    //var percentCorrect = (0-percentIncorrect)*(-100);
+    var percentCorrect = 100 - (percentIncorrect*100)
     return percentCorrect;
   }
 
   endRound(){
-    console.log(`** Round over! ** You answered ${percentCorrect}% of the questions correctly!`)
+
+    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
   }
 
 
