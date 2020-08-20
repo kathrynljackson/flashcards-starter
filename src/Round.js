@@ -1,8 +1,4 @@
-//const data = require('./data');
-//const prototypeQuestions = data.prototypeData;
-//const util = require('./util');
 const Turn = require('../src/Turn');
-//const Card = require('../src/Card');
 const Deck = require('../src/Deck');
 
 class Round {
@@ -32,7 +28,6 @@ class Round {
   calculatePercentCorrect() {
     var totalIncorrect = this.incorrectGuesses.length;
     var percentIncorrect = totalIncorrect / this.turns;
-    //var percentCorrect = (0-percentIncorrect)*(-100);
     var percentCorrect = 100 - (percentIncorrect * 100)
     return percentCorrect;
   }
@@ -41,12 +36,6 @@ class Round {
 
     console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
   }
-
-
-
-
-
 }
 
 module.exports = Round;
-// npm test test/Round-test.js

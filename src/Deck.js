@@ -1,6 +1,5 @@
 const data = require('./data');
 const prototypeQuestions = data.prototypeData;
-//const util = require('./util');
 
 class Deck {
   constructor(cardsInDeck) {
@@ -13,7 +12,4 @@ class Deck {
   }
 }
 
-
-
 module.exports = Deck;
-// npm test test/Deck-test.js

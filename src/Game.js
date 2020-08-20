@@ -11,9 +11,6 @@ class Game {
   }
 
   start() {
-    //var cards = new Cards;
-    //var deck = new Deck;
-    //var round = new Round(deck);
     this.printMessage();
     this.printQuestion();
   }
@@ -31,7 +28,5 @@ class Game {
       util.main(round);
   }
 }
-
-
 
 module.exports = Game;
