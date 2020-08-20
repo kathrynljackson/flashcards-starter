@@ -4,14 +4,15 @@ const util = require('./util');
 
 class Deck {
   constructor(cardsInDeck) {
-    this.cardsInDeck = cardsInDeck || [];
+    this.cardsInDeck = prototypeQuestions || cardsInDeck;
   }
 
   countCards() {
     var cardAmount = this.cardsInDeck.length;
     return cardAmount;
-
   }
+
+
 
 };
 
