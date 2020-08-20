@@ -17,7 +17,7 @@ class Game {
   start(){
     var cards = new Cards;
     var deck = new Deck;
-    var round = new Round(prototypeQuestions);
+    var round = new Round(deck);
     //console.log(prototypeQuestions) THIS IS GOOD, but figure out how to use it
     var printMessage = this.printMessage();
     var printMessage = this.printQuestion();
@@ -31,6 +31,8 @@ class Game {
   }
 
   printQuestion(round) {
+    var round = new Round(deck);
+    var deck = new Deck;
       util.main(round);
   }
 }

@@ -7,6 +7,7 @@ const Deck = require('../src/Deck');
 
 class Round {
   constructor(deck) {
+    var deck = new Deck;
     this.deck = deck.cardsInDeck;
     this.turns = 0;
     this.incorrectGuesses = [];
