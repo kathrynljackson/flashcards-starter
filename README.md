@@ -16,7 +16,7 @@ This project requires writing a program that simulates using flash cards. This p
 
 ## Preview of Working Application
 
-INSERT GIF HERE
+![](https://media2.giphy.com/media/YqKtbYLe8KYWgOPf6B/giphy.gif)
 
 
 ## Installation Instructions
