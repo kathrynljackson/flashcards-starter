@@ -1,20 +1,31 @@
 # FlashCards Starter Kit
+### Mod 2 
+## Kathryn Jackson
 
-## Fork This Repo
+## Abstract
 
-On the top right corner of this page, click the **Fork** button.
+This project requires writing a program that simulates using flash cards. This program runs in the command line, where the user can see the questions, choose an answer, and see their final score at the end of the round. Test Driven Development is used to drive the implementation of my code.
 
-## Setup
+**The learning goals include:**
+* Contribute code to an partially constructed object-oriented application
+* Follow spec/prompts to make a working application
+* Implement ES6 classes
+* Write modular, reusable code that follows SRP (Single Responsibility Principle)
+* Implement a robust testing suite using TDD
 
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
+## Setup and Installation
 
-```bash
-git clone [remote-address] [what you want to name the repo]
+1. In your terminal, choose the directory that you would like to store the game in. 
+
+1. Clone down this repo.
+
+```
+git clone git@github.com:kathrynljackson/flashcards-starter.git
 ```
 
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
+2. Once you have cloned the repo, change into the directory and install the library dependencies. Run:
 
-```bash
+```
 npm install
 ```
 
