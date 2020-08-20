@@ -5,26 +5,21 @@ const Round = require('../src/Round');
 const Deck = require('../src/Deck');
 const Cards = require('../src/Deck');
 
-
-const main = require('./util');
-//dont know if I need this^
-
 class Game {
   constructor(currentRound) {
     this.currentRound = currentRound;
   }
 
-  start(){
-    var cards = new Cards;
-    var deck = new Deck;
-    var round = new Round(deck);
-    //console.log(prototypeQuestions) THIS IS GOOD, but figure out how to use it
-    var printMessage = this.printMessage();
-    var printMessage = this.printQuestion();
+  start() {
+    //var cards = new Cards;
+    //var deck = new Deck;
+    //var round = new Round(deck);
+    this.printMessage();
+    this.printQuestion();
   }
 
 
-  printMessage(deck, round) {
+  printMessage(deck) {
       var deck = new Deck;
       console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
 -----------------------------------------------------------------------`)

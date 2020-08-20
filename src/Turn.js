@@ -1,8 +1,8 @@
 const data = require('./data');
-const prototypeQuestions = data.prototypeData;
-const util = require('./util');
-const Round = require('../src/Round');
-const Deck = require('../src/Deck');
+//const prototypeQuestions = data.prototypeData;
+//const util = require('./util');
+//const Round = require('../src/Round');
+//const Deck = require('../src/Deck');
 
 class Turn {
   constructor(userGuess, cardObject) {
@@ -28,16 +28,15 @@ class Turn {
       // Round.incorrectGuesses.push(this.cardObject[i].id)
       // return Round.icorrectGuesses;
     }
-  };
+  }
 
-   giveFeedback() {
+  giveFeedback() {
     if (this.userGuess === this.cardObject.correctAnswer) {
       return 'correct!'
     } else {
       return 'incorrect!'
     }
-  };
-
+  }
 
 }
 module.exports = Turn;
