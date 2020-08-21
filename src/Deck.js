@@ -3,11 +3,11 @@ const prototypeQuestions = data.prototypeData;
 
 class Deck {
   constructor(cardsInDeck) {
-    this.cardsInDeck =  cardsInDeck || prototypeQuestions;
+    this.cardsInDeck = cardsInDeck;
   }
 
   countCards() {
-    var cardAmount = this.cardsInDeck.length;
+    const cardAmount = this.cardsInDeck.length;
     return cardAmount;
   }
 }
