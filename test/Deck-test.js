@@ -16,9 +16,4 @@ describe('Deck', function() {
     round(deck);
     expect(deck.countCards()).to.equal(3);
   });
-
-
-
-
-
 });
