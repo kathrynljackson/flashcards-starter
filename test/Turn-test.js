@@ -39,6 +39,4 @@ describe('Card', function() {
     const turn = new Turn('pug', card);
     expect(turn.giveFeedback()).to.equal('incorrect!');
   });
-
-
 });

@@ -3,40 +3,43 @@ const prototypeQuestions = data.prototypeData;
 const util = require('./util');
 const Round = require('../src/Round');
 const Deck = require('../src/Deck');
-const Cards = require('../src/Deck');
-
-
-const main = require('./util');
-//dont know if I need this^
+const Card = require('../src/Card');
 
 class Game {
-  constructor(currentRound) {
-    this.currentRound = currentRound;
+  constructor(round) {
+    this.round = null;
   }
 
-  start(){
-    var cards = new Cards;
-    var deck = new Deck;
-    var round = new Round(deck);
-    //console.log(prototypeQuestions) THIS IS GOOD, but figure out how to use it
-    var printMessage = this.printMessage();
-    var printMessage = this.printQuestion();
+  start() {
+    //var cards = new Card();
+
+    //need to iterate through the prototypeData array and make each object in that Array
+    //an instance of the Card class
+
+    const cards = prototypeQuestions.map(card =>
+      new Card(
+        card['id'],
+        card['question'],
+        card['answers'],
+        card['correctAnswer'],
+    ));
+    const deck = new Deck(cards);
+    const round = new Round(deck);
+    this.printMessage(deck, round);
+    this.printQuestion(round);
   }
 
 
   printMessage(deck, round) {
-      var deck = new Deck;
+
       console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
 -----------------------------------------------------------------------`)
   }
 
   printQuestion(round) {
-    var round = new Round(deck);
-    var deck = new Deck;
+
       util.main(round);
   }
 }
-
-
 
 module.exports = Game;
